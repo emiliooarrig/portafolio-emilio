@@ -1,0 +1,264 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+
+}
+/* ESTILOS CSS DEL HEADER */
+
+header{
+    background: url(img/pexels-dominika-roseclay-1036808.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0;
+    max-height: 600px;
+}
+
+header .menu{
+    margin: 40px 0;
+    text-align: right;
+}
+
+header .menu a{
+    margin: 0 20px;
+    color: #000;
+    padding-bottom: 9px;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    font-size: 1em;
+    transition: .3s all;
+}
+
+header .menu a:hover{
+    border-bottom: 2px solid #000;
+}
+
+header .contenedor-texto{
+    /* centramos los elementos con flexbox */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 190px 0;
+}
+
+header .contenedor-texto .texto{
+    border: 2px solid rgba(0,0,0,0.5);
+    border-radius: 3px;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 60px;
+}
+
+header .contenedor-texto .texto h1,
+header .contenedor-texto .texto h2{
+    color: #000; 
+    font-weight: 300;
+    margin: 0;
+}
+
+header .contenedor-texto .texto .nombre{
+    margin-bottom: 10px;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+header .contenedor-texto .texto .profesion{
+    font-size: 25px;
+    line-height: 50px;
+}
+
+/* ESTILOS CSS DEL ACERCA DE */
+
+.main .contenedor{
+    overflow: visible;
+}
+.main .acerca-de{
+    text-align: center;
+}
+
+.main .acerca-de .foto{
+    margin-top: -50px;    
+}
+
+.main .acerca-de .foto .foto-personal{
+    vertical-align: top;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.5); 
+    height: 200px;
+}
+.main .acerca-de .texto .link-acercade{
+    font-weight: 700;
+    color: #3895ea;
+    text-decoration: none;
+}
+.main .acerca-de .texto .link-acercade:hover{
+    text-decoration: underline;
+}
+.main .acerca-de .texto {
+    color: #5a5a5a;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 30px;
+    width: 80%;
+    margin: 40px auto;
+}
+
+.main .acerca-de .texto .titulo{
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: #dd820d;
+    text-align: center;
+}
+
+.main .acerca-de .texto .bold{
+    color: #3895ea;
+    text-decoration: underline;
+}
+
+/*TRABAJOS*/
+.main .trabajos{
+    background: #f2f2f2;
+    padding: 60px 0;
+}
+
+.main .trabajos .contenedor{
+    overflow: hidden;
+}
+
+.main .trabajos .titulo{
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: #323068;
+    text-align: center;
+
+}
+
+.main .trabajos .contenedor-trabajos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo{
+    margin-bottom: 40px;
+    width: 23%;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .thumb{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .thumb .imagen-trabajo{
+    width: 100%;
+    vertical-align: top;
+    border-radius: 5px;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .descripcion{
+    text-align: center;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .descripcion .nombre{
+    font-weight: 700;
+    color: #3895ea;
+    margin-bottom: 10px;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .descripcion .categoria{
+    font-size: 14px;
+    color: #636363;
+}
+
+
+/*FORMULARIO DE CONTACTO*/
+
+.redes-sociales{
+    padding: 60px 0;
+    background-color: #1e2b38;
+}
+
+.redes-sociales .contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.redes-sociales a{
+    color: #fff;
+    font-size: 35px;
+    padding: 15px 0;
+    text-align: center;
+    width: 100px;
+    border-radius: 3px;
+}
+
+.redes-sociales .Linkedin:hover{ background-color:#0a66c2; }
+.redes-sociales .Instagram:hover{ background-color: #c13584; }
+.redes-sociales .Github:hover{ background-color: #333; }
+.redes-sociales .mail:hover{ background-color: #ea4335; }
+
+@media (max-width: 450px) {
+
+    header{
+        background-position: -70px;
+    }
+    header .contenedor-texto{
+        margin: 120px 0;
+    }
+    header .contenedor-texto .texto .nombre{
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    header .contenedor-texto .texto .profesion{
+        line-height: 30px;
+    }
+
+    header .menu a{
+        margin: 0 10px;
+    }
+
+    .main .trabajos{
+        padding: 0 30px;
+    }
+    .main .trabajos .contenedor-trabajos .trabajo{
+        margin-bottom: 40px;
+        width: 80%;
+    }
+
+    .main .trabajos .contenedor-trabajos{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .redes-sociales .contenedor{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 15px 0;
+    }
+}
