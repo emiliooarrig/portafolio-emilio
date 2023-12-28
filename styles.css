@@ -199,8 +199,14 @@ header .contenedor-texto .texto .profesion{
 /*FORMULARIO DE CONTACTO*/
 
 .redes-sociales{
-    padding: 60px 0;
+    padding: 30px 0;
     background-color: #1e2b38;
+    text-align: center;
+}
+
+.redes-sociales h1{
+    color: #fff;
+    font-weight: 300;
 }
 
 .redes-sociales .contenedor{
@@ -217,6 +223,7 @@ header .contenedor-texto .texto .profesion{
     text-align: center;
     width: 100px;
     border-radius: 3px;
+    transition: .3s all;
 }
 
 .redes-sociales .Linkedin:hover{ background-color:#0a66c2; }
@@ -259,6 +266,9 @@ header .contenedor-texto .texto .profesion{
         align-items: center;
     }
 
+    .redes-sociales h1{
+        font-size: 25px;
+    }
     .redes-sociales .contenedor{
         flex-direction: row;
         justify-content: space-around;
